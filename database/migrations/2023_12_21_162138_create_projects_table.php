@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('description');
             $table->string('project_type');
             $table->string('link');
-            $table->string('project_stauts');
+            $table->string('project_status');
             $table->timestamps();
         });
     }

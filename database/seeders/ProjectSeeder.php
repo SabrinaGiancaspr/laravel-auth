@@ -20,7 +20,7 @@ class ProjectSeeder extends Seeder
             $new_project->description = $faker->text(500);
             $new_project->project_type = $faker->randomElement(['Front-End', 'Back-End', 'Full-stack']);
             $new_project->link = 'https://github.com/SabrinaGiancaspr/'. Str::slug($new_project->name);
-            $new_project->project_stauts = $faker->randomElement(['in progress', 'done']);
+            $new_project->project_status = $faker->randomElement(['in progress', 'done']);
             $new_project->save();
         }
     }
