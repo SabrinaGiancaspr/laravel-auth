@@ -4,6 +4,7 @@
 
 <section class="py-5">
   <div class="container">
+    <h1>Create a new Project</h1>
     <form action="{{ route('admin.projects.store' ) }}" method="POST" >
 
       @csrf
@@ -32,7 +33,7 @@
       </div>
       
       <div class="">
-        <input type="submit" class="btn btn-primary" value="crea">
+        <input type="submit" class="btn btn-primary" value="Crea">
       </div>
 
     </form>

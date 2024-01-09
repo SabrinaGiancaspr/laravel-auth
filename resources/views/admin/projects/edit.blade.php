@@ -4,7 +4,7 @@
 
 <section class="py-5">
   <div class="container">
-    <h1>Page EDIT</h1>
+    <h1>Edit the Project</h1>
     <form action="{{ route('admin.projects.update', $project ) }}" method="POST" >
 
       @csrf

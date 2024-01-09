@@ -4,8 +4,7 @@
     <section>
         
       <div class="container">
-        <a class="btn btn-primary" href="{{route('admin.projects.create')}}">create new project</a>
-        <h1>Posts index</h1>
+        <h1>Your Projects</h1>
       </div>
     </section>
     <section>
@@ -19,7 +18,6 @@
               <th>Project Type</th>
               <th>Link</th>
               <th>Project Status</th>
-
             </tr>
           </thead>
           <tbody>
@@ -37,14 +35,14 @@
                   <td>{{$project->project_status}}</td>
 
                   <td>
-                    <a class="btn btn-primary" href="{{ route('admin.projects.edit',$project) }}">edit</a>
+                    <a class="btn btn-primary" href="{{ route('admin.projects.edit',$project) }}">Edit</a>
                   </td>
                  <td>
                     <form action="{{ route('admin.projects.destroy',$project)}}" method="POST">
                       @csrf
                       @method('DELETE')
 
-                      <input class="btn btn-danger btn-sm" type="submit" value="delete">
+                      <button class="btn btn-danger">Delete</button>
                     </form>
                   </td> 
 
